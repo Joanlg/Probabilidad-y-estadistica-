@@ -49,12 +49,12 @@ names(items24)<-c("Leo si es necesario",
                   "Leer es de mis pasatiempos favoritos",
                   "Me gusta hablar de libros con otras personas",
                   "Encuento dificil terminar un libro",
-                  "Me siento feliz sí recibo un libro como regalo",
-                  "Para mi, leer es una pérdida de tiempo",
-                  "Disfruto ir a una librería o bilioteca",
-                  "Leo sólo para obtener la información que necesito",
-                  "No puedo estar sentado leyendo por más de 5 minutos",
-                  "Me gusta expresar mi opinion sobre un libro cuando lo he leído",
+                  "Me siento feliz sÃ­ recibo un libro como regalo",
+                  "Para mi, leer es una pÃ©rdida de tiempo",
+                  "Disfruto ir a una librerÃ­a o bilioteca",
+                  "Leo sÃ³lo para obtener la informaciÃ³n que necesito",
+                  "No puedo estar sentado leyendo por mÃ¡s de 5 minutos",
+                  "Me gusta expresar mi opinion sobre un libro cuando lo he leÃ­do",
                   "Me gusta intercambiar libros con mis amigas-os")
 
 
@@ -67,18 +67,18 @@ plot(l24,type="bar",centered=FALSE)
 install.packages("plyr")
 library(plyr)
 
-plot(124,type="bar",centered=TRUE, plot.percents=TRUE)
+plot(l24,type="bar",centered=TRUE, plot.percents=TRUE)
 
 
 #Grafico de barras ordenado
-plot(124,group.order = colnames(items24))
+plot(l24,group.order = colnames(items24))
 
 #Grafico de densidad
 likert.density.plot(l24,facet=TRUE,bw=0.5, 
-                    legend = "Gráfico de densidad")
+                    legend = "GrÃ¡fico de densidad")
 
-#gráfico de calor
-plot(124, type="heat")
+#grÃ¡fico de calor
+plot(l24, type="heat")
 
 #----- Variable 25-----
 
@@ -96,7 +96,7 @@ l25<-likert(items25)
 #los indicadores
 head(l25)
 
-#Generamos el gráfico de barras de las respuestas el conjunto.
+#Generamos el grÃ¡fico de barras de las respuestas el conjunto.
 plot(l25, type="bar", centered=FALSE)
 
 #Grafico de barras con porcentajes
