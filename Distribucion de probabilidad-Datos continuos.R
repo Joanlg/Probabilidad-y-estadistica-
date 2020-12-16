@@ -1,13 +1,14 @@
 #Distribucion de probabilidad: Datos continuos
-#X es una variable normalmente distribuida con una media de 30 y una desviaciÛn
-#est·ndar de 4.
+#Examen practico 3 parte 2
+#X es una variable normalmente distribuida con una media de 30 y una desviaci√≥n
+#est√°ndar de 4.
 
 #Encontrar: a)P(x<40), b)P(x>21), c)P(30<x< 35).
 
 #a) P(x<40)
 #media
 #???? = 30 
-#desviaciÛn estandar
+#desviaci√≥n estandar
 #???? = 4 
 #Z=2.5
 pnorm(2.5)
@@ -15,7 +16,7 @@ pnorm(40,mean=30, sd=4, lower.tail=TRUE)
 #b)P(x>21)
 #media
 #???? = 21 
-#desviaciÛn estandar
+#desviaci√≥n estandar
 #???? = 4 
 #Z=-2.25
 pnorm(-2.25)
@@ -24,18 +25,18 @@ pnorm(21,mean=30, sd=4, lower.tail=TRUE)
 
 #media
 #???? = 30 
-#desviaciÛn estandar
+#desviaci√≥n estandar
 #???? = 4
 #Z: 1.25
 pnorm(0)
 pnorm(1.25)
 pnorm(35,mean=30, sd=4, lower.tail=TRUE)-pnorm(30,mean=30, sd=4, lower.tail=TRUE)
 
-#1.- #X es una variable normalmente distribuida con una media de 45 y una desviaciÛn
-#est·ndar de 2.
+#1.- #X es una variable normalmente distribuida con una media de 45 y una desviaci√≥n
+#est√°ndar de 2.
 #Encontrar: a) P(x<75), b) P(x>13), c)P(60<x< 82).
 #???? = 45 #media
-#???? = 2 #desviaciÛn estandar
+#???? = 2 #desviaci√≥n estandar
 #a) P(x<75)
 #Z= 15
 pnorm(15)
@@ -57,11 +58,11 @@ pnorm(82,mean=45, sd=2, lower.tail=TRUE)
 pnorm(60,mean=45, sd=2, lower.tail=TRUE) - pnorm(82,mean=45, sd=2, lower.tail=TRUE)
 
 #2.- El ingreso a una determinada universidad se determina mediante un examen nacional. 
-#Los resultados de esta prueba se distribuyen normalmente con una media de 500 y una desviaciÛn 
-#est·ndar de 100. Timmy quiere ser admitido en esta universidad y sabe que debe obtener mejores resultados que al menos el 70% de los estudiantes que tomaron el examen.
-#Timmy presenta el examen y obtuvo 585 puntos. øSer· admitido en esta universidad?
+#Los resultados de esta prueba se distribuyen normalmente con una media de 500 y una desviaci√≥n 
+#est√°ndar de 100. Timmy quiere ser admitido en esta universidad y sabe que debe obtener mejores resultados que al menos el 70% de los estudiantes que tomaron el examen.
+#Timmy presenta el examen y obtuvo 585 puntos. ¬øSer√° admitido en esta universidad?
 
-#a) Genera el siguiente gr·fico:
+#a) Genera el siguiente gr√°fico:
 n=1000
 hist(rnorm(n,500,100),20, col= "blue")
 abline(v=585,col=2)
@@ -69,18 +70,18 @@ abline(v=585,col=2)
 #P( X < 585) > 70%?
 pnorm(585,mean=500, sd=100) 
 (0.8023375*100)
-#Interpretacion: Timmy obtuvo una puntuaciÛn mejor que 
+#Interpretacion: Timmy obtuvo una puntuaci√≥n mejor que 
 #el 80.23% de los estudiantes que tomaron el examen y
-#ser· admitido en esta universidad.
+#ser√° admitido en esta universidad.
 
 #El ingreso a la BENV se determina mediante la prueba estandarizada EXANII-II. Los resultados de esta prueba se
-#distribuyen normalmente con una media de 1000 y una desviaciÛn est·ndar de 100. T˙ quieres ser admitido en esta
-#instituciÛn y sabes que debes obtener mejores resultados que al menos el 90% de los estudiantes que tomaron el examen.
+#distribuyen normalmente con una media de 1000 y una desviaci√≥n est√°ndar de 100. T√∫ quieres ser admitido en esta
+#instituci√≥n y sabes que debes obtener mejores resultados que al menos el 90% de los estudiantes que tomaron el examen.
 #Presentas el examen y obtuviste 1185 puntos.
-#øSer·s admitida/o en la BENV?
+#¬øSer√°s admitida/o en la BENV?
 
-#a) Genera el gr·fico con n=2600.
-#b) Plantea el problema y realiza los c·lculos de la probabilidad.
+#a) Genera el gr√°fico con n=2600.
+#b) Plantea el problema y realiza los c√°lculos de la probabilidad.
 #c) Interpreta el resultado
 n=2600
 hist(rnorm(n,1000,100),20, col="red")
@@ -92,9 +93,9 @@ pnorm(1185,mean=1000, sd=100)
 #INTERPRETAR RESULTADO
 #Prueba de hipotesis/T-test/EJERCICIO
 set.seed(10)
-x <- rnorm(100,10) # CreaciÛn de una variable aleatoria de media 10
+x <- rnorm(100,10) # Creaci√≥n de una variable aleatoria de media 10
 Media <- 10
-test <- t.test(x, mu=Media) # ComparaciÛn de la media muestral con la media
+test <- t.test(x, mu=Media) # Comparaci√≥n de la media muestral con la media
 print(test)
 #INTERPRETACION: El p-valor es >0.05, no se rechaza Ho. Por lo
 #tanto, la muestra tiene media igual a 10.
