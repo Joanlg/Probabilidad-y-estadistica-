@@ -90,7 +90,7 @@ abline(v=1185, col=46)
 pnorm(1185,mean=1000, sd=100) 
 #Multiplica la probabilidad obtenida por 100
 (0.9678432*100)
-#INTERPRETAR RESULTADO
+#Interpretación: Seré admitido en la BENV debido a que obtuve una mejor puntuación que el 96.78% de los estudiantes que presentaron el examen. 
 #Prueba de hipotesis/T-test/EJERCICIO
 set.seed(10)
 x <- rnorm(100,10) # Creación de una variable aleatoria de media 10
